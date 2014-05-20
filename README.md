@@ -9,9 +9,9 @@ generate ground truth for a classifier). It is a 3D adaptation of [1].
 Usage
 -----
 
-ESC or q : exit
-SPACE : save box
-ENTER : skip, go to the next file without saving.
+ESC or q : exit                    
+SPACE : save box                  
+ENTER : skip, go to the next file without saving.           
 
 If a cropped box is already found, the file is skipped, so to change a cropped
 box, you need to delete the corresponding png.
