@@ -16,8 +16,16 @@ ENTER : skip, go to the next file without saving.
 If a cropped box is already found, the file is skipped, so to change a cropped
 box, you need to delete the corresponding png.
 
-See `run.sh` for an example for cropping, and `parse.py` for an example for
-parsing the cropped boxes to a csv file.
+A regular expression to parse the png files is:
+
+    import re
+    pattern =  r'(?P<raw_file>[^/]+\.nii)_(?P<z>\d+)_(?P<y>\d+)_(?P<x>\d+)_(?P<d>\d+)_(?P<h>\d+)_(?P<w>\d+)\.png$'
+    match = re.search( pattern, filename )
+    m = match.groupdict()
+    
+See `./run.sh` for an example for cropping,
+and `./parse.py ground_truth/ boxes.txt`
+for an example for parsing the cropped boxes to a text file.
 
 
 Screenshot
