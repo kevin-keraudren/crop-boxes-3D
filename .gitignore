@@ -1,0 +1,7 @@
+# input and output folders
+ground_truth/
+data/
+
+# emacs
+.*~
+
