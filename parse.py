@@ -26,7 +26,7 @@ out = open(output_file,"w")
 for f in boxes.keys():
     out.write( f + "\t"
                + ','.join( map( str, boxes[f]['c']) ) + ','
-               + ','.join( map( str, boxes[f]['c']) ) )
+               + ','.join( map( str, boxes[f]['s']) ) )
     out.write("\n")
 
 out.close()
